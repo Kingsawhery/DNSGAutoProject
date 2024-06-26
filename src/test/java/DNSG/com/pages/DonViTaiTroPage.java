@@ -1,7 +1,13 @@
 package DNSG.com.pages;
 
 import org.openqa.selenium.By;
+<<<<<<< HEAD
 import org.testng.Assert;
+=======
+import org.openqa.selenium.WebElement;
+import org.testng.Assert;
+import quangtester.com.helpers.SystemsHelper;
+>>>>>>> develop
 import quangtester.com.keywords.WebUI;
 
 public class DonViTaiTroPage {
@@ -26,7 +32,11 @@ public class DonViTaiTroPage {
         WebUI.clickElement(clickpagedonvitaitroadmin);
         WebUI.clickElement(buttonAddDonViTaiTro);
         WebUI.clickElement(Logo);
+<<<<<<< HEAD
         WebUI.uploadFileRobotClass("D:\\Code_Automation\\ProjectAutomation_DNSG-main\\src\\main\\resources\\datatest\\img6.jpg");
+=======
+        WebUI.uploadFileRobotClass("D:\\Code_Automation\\ProjectAutomation_DNSG\\src\\main\\resources\\datatest\\img6.jpg");
+>>>>>>> develop
         WebUI.setText(Tendonvi,Ten_Don_Vi);
         WebUI.setText(Linkdonvi,Link_Don_Vi);
         WebUI.clickElement(buttonLuuDonvi);
@@ -64,7 +74,11 @@ public class DonViTaiTroPage {
 
 
     //Chỉnh sửa ơn vị
+<<<<<<< HEAD
     By iconeditdonvi = By.xpath("//div/div[2]/div/div[2]/div/div[2]/div[7]/div/button[1]");
+=======
+    By iconeditdonvi = By.xpath("//div/div[2]/div/div[2]/div/div[5]/div[7]/div/button[1]");
+>>>>>>> develop
     By buttonLuuEdit = By.xpath("//div[3]/div[3]/div/div[3]/button[2]");
     public void EditDonViTaiTro(String EditTenDonVi, String EditLinkDonVi){
         WebUI.clickElement(clickpagedonvitaitroadmin);
@@ -75,6 +89,10 @@ public class DonViTaiTroPage {
 
         //Link
         WebUI.setText(Linkdonvi,EditLinkDonVi);
+<<<<<<< HEAD
+=======
+
+>>>>>>> develop
         WebUI.clickElement(buttonLuuDonvi);
         WebUI.sleep(1.5);
 

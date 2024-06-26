@@ -22,11 +22,19 @@ public class DonViTaiTroTest extends BaseTest {
         loginPage = new LoginPage();
         donViTaiTroPage = new DonViTaiTroPage();
         excelHelper = new ExcelHelper();
+<<<<<<< HEAD
         excelHelper.setExcelFile("src/main/resources/datatest/DonViTaiTroPage.xlsx","ThemDonVi");
         loginPage.LoginThanhCong(excelHelper.getCellData(2,5),
                                  excelHelper.getCellData(3,5));
 
         excelHelper.setExcelFile("src/main/resources/datatest/DonViTaiTroPage.xlsx","ThemDonVi");
+=======
+        excelHelper.setExcelFile("src\\main\\resources\\datatest\\DonViTaiTroPage.xlsx","ThemDonVi");
+        loginPage.LoginThanhCong(excelHelper.getCellData(2,5),
+                                 excelHelper.getCellData(3,5));
+
+        excelHelper.setExcelFile("src\\main\\resources\\datatest\\DonViTaiTroPage.xlsx","ThemDonVi");
+>>>>>>> develop
         donViTaiTroPage.ThemMoiDonViTaiTro(excelHelper.getCellData(8,5),
                                             excelHelper.getCellData(9,5));
         donViTaiTroPage.verifyThemMoiDonViTaiTroThanhCong(excelHelper.getCellData(12,5));
@@ -39,7 +47,11 @@ public class DonViTaiTroTest extends BaseTest {
         loginPage = new LoginPage();
         donViTaiTroPage = new DonViTaiTroPage();
         excelHelper = new ExcelHelper();
+<<<<<<< HEAD
         excelHelper.setExcelFile("src/main/resources/datatest/DonViTaiTroPage.xlsx","XoaDonVi");
+=======
+        excelHelper.setExcelFile("src\\main\\resources\\datatest\\DonViTaiTroPage.xlsx","XoaDonVi");
+>>>>>>> develop
         loginPage.LoginThanhCong(excelHelper.getCellData(2,5),
                                  excelHelper.getCellData(3,5));
         donViTaiTroPage.XoaDonViTaiTro();
@@ -53,7 +65,11 @@ public class DonViTaiTroTest extends BaseTest {
         loginPage = new LoginPage();
         donViTaiTroPage = new DonViTaiTroPage();
         excelHelper = new ExcelHelper();
+<<<<<<< HEAD
         excelHelper.setExcelFile("src/main/resources/datatest/DonViTaiTroPage.xlsx","EditDonVI");
+=======
+        excelHelper.setExcelFile("src\\main\\resources\\datatest\\DonViTaiTroPage.xlsx","EditDonVI");
+>>>>>>> develop
         loginPage.LoginThanhCong(excelHelper.getCellData(2,5),
                                  excelHelper.getCellData(3,5));
         donViTaiTroPage.EditDonViTaiTro(excelHelper.getCellData(8,5),

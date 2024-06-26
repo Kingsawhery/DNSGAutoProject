@@ -16,7 +16,11 @@ public class HoiClbTest extends BaseTest {
        loginPage = new LoginPage();
        hoiClbPage = new HoiClbPage();
        excelHelper = new ExcelHelper();
+<<<<<<< HEAD
        excelHelper.setExcelFile("src/main/resources/datatest/HoiClb.xlsx","ThemHoiClb");
+=======
+       excelHelper.setExcelFile("src\\main\\resources\\datatest\\HoiClb.xlsx","ThemHoiClb");
+>>>>>>> develop
        loginPage.LoginThanhCong(excelHelper.getCellData(2,5),
                                 excelHelper.getCellData(3,5));
 
@@ -32,7 +36,11 @@ public class HoiClbTest extends BaseTest {
         loginPage = new LoginPage();
         hoiClbPage = new HoiClbPage();
         excelHelper = new ExcelHelper();
+<<<<<<< HEAD
         excelHelper.setExcelFile("src/main/resources/datatest/HoiClb.xlsx","XoaHoiClb");
+=======
+        excelHelper.setExcelFile("src\\main\\resources\\datatest\\HoiClb.xlsx","XoaHoiClb");
+>>>>>>> develop
         loginPage.LoginThanhCong(excelHelper.getCellData(2,5),
                                  excelHelper.getCellData(3,5));
         hoiClbPage.XoaHoiClb();
@@ -44,7 +52,11 @@ public class HoiClbTest extends BaseTest {
         loginPage = new LoginPage();
         hoiClbPage = new HoiClbPage();
         excelHelper = new ExcelHelper();
+<<<<<<< HEAD
         excelHelper.setExcelFile("src/main/resources/datatest/HoiClb.xlsx","EditHoiClb");
+=======
+        excelHelper.setExcelFile("src\\main\\resources\\datatest\\HoiClb.xlsx","EditHoiClb");
+>>>>>>> develop
         loginPage.LoginThanhCong(excelHelper.getCellData(2,5),
                                  excelHelper.getCellData(3,5));
         hoiClbPage.EditHoiClb(excelHelper.getCellData(8,5),

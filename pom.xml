@@ -71,6 +71,7 @@
             <version>2.15.1</version>
         </dependency>
 
+<<<<<<< HEAD
         <!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core -->
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>
@@ -155,5 +156,19 @@
                 </plugin>
             </plugins>
         </pluginManagement>
+=======
+    </dependencies>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>16</source>
+                    <target>16</target>
+                </configuration>
+            </plugin>
+        </plugins>
+>>>>>>> develop
     </build>
 </project>
