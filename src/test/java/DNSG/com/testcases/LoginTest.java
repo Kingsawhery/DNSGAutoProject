@@ -1,8 +1,5 @@
 package DNSG.com.testcases;
-<<<<<<< HEAD
-=======
 
->>>>>>> develop
 import DNSG.com.common.BaseTest;
 import DNSG.com.pages.LoginPage;
 import org.testng.annotations.Test;
@@ -16,17 +13,10 @@ public class LoginTest extends BaseTest {
     public void loginTestDNSGSuccess(){
         loginPage = new LoginPage();
         excelHelper = new ExcelHelper();
-<<<<<<< HEAD
         excelHelper.setExcelFile("src/main/resources/datatest/LoginPage.xlsx","AccountUser");
         loginPage.LoginThanhCong(excelHelper.getCellData(2,5),
                                  excelHelper.getCellData(3,5));
         //loginPage.verifyLoginThanhCong(excelHelper.getCellData(5,5));
-=======
-        excelHelper.setExcelFile("src\\main\\resources\\datatest\\LoginPage.xlsx","AccountUser");
-        loginPage.LoginThanhCong(excelHelper.getCellData(2,5),
-                                 excelHelper.getCellData(3,5));
-        loginPage.verifyLoginThanhCong(excelHelper.getCellData(5,5));
->>>>>>> develop
 
     }
 
@@ -34,16 +24,9 @@ public class LoginTest extends BaseTest {
     public void loginTestDNSGThatBai(){
         loginPage = new LoginPage();
         excelHelper = new ExcelHelper();
-<<<<<<< HEAD
         excelHelper.setExcelFile("src/main/resources/datatest/LoginPage.xlsx","AccountUser");
         loginPage.LoginThatBai(excelHelper.getCellData(7,5),
                                  excelHelper.getCellData(8,5));
         //loginPage.verifyLoginThatBai(excelHelper.getCellData(10,5));
-=======
-        excelHelper.setExcelFile("src\\main\\resources\\datatest\\LoginPage.xlsx","AccountUser");
-        loginPage.LoginThanhCong(excelHelper.getCellData(7,5),
-                                 excelHelper.getCellData(8,5));
-        loginPage.verifyLoginThatBai(excelHelper.getCellData(10,5));
->>>>>>> develop
     }
 }
