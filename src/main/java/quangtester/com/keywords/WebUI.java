@@ -23,12 +23,6 @@ public class WebUI {
     public static WebElement getWebElement(By by) {
         return DriverManager.getDriver().findElement(by);
     }
-<<<<<<< HEAD
-    public static List getWebElements(By by) {
-        return DriverManager.getDriver().findElements(by);
-    }
-=======
->>>>>>> develop
 
     public static void logConsole(String message) {
         System.out.println(message);
@@ -37,10 +31,6 @@ public class WebUI {
     public static void hoverOnElement(By by) {
         waitForElementVisible(by);
         Actions action = new Actions(DriverManager.getDriver());
-<<<<<<< HEAD
-
-=======
->>>>>>> develop
         action.moveToElement(getWebElement(by));
         logConsole("Hover on element " + by);
     }
@@ -58,15 +48,8 @@ public class WebUI {
         JavascriptExecutor js = (JavascriptExecutor) DriverManager.getDriver();
         waitForPageLoaded();
         waitForElementVisible(by);
-<<<<<<< HEAD
-        highLightElement(by);
         js.executeScript("arguments[0].scrollIntoView(true);", getWebElement(by));
         js.executeScript("arguments[0].click();", getWebElement(by));
-        logConsole("Click on element with Js: " + by);
-=======
-        js.executeScript("arguments[0].scrollIntoView(true);", getWebElement(by));
-        js.executeScript("arguments[0].click();", getWebElement(by));
->>>>>>> develop
     }
 
     public static void rightClickElement(By by) {

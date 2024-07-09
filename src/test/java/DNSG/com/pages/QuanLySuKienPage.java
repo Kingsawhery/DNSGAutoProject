@@ -27,15 +27,13 @@ public class QuanLySuKienPage {
     By tensukien = By.xpath("//div/div[1]/div/div[3]/div/input");
     By ngaydienrasukien = By.xpath("//div[1]/div/div[4]/div/input");
     By btnlichSK = By.xpath("//div/div[1]/div/div[4]/div/div/button");
+    By thangsau = By.xpath("//div[5]/div[2]/div/div/div/div[1]/div[2]/button[2]");
+    By cuoithang8 = By.xpath("//div/div/div[2]/div/div/div[2]/div/div[5]/button[6]");
+    By popupChonNgayDienra = By.xpath("//div[2]/div/div/div[2]/div/div[5]/button[3]");
     By thoigianbatdauSK = By.xpath("//div/div[1]/div/div[5]/div/input");
     By thoigianketthucSK = By.xpath("//div[1]/div/div[6]/div/input");
     By btnselectthoigianbatdau = By.xpath("//div[1]/div/div[5]/div/div/button");
     By btnselectthoigianketthuc = By.xpath("//div/div[1]/div/div[6]/div/div/button");
-<<<<<<< HEAD
-    By popupChonNgayDienra = By.xpath("//div/div/div/div[2]/div/div/div[2]/div/div[5]/button[7]");
-=======
-    By popupChonNgayDienra = By.xpath("//div[2]/div/div/div[2]/div/div[5]/button[5]");
->>>>>>> develop
     By HOUR = By.xpath("//li[@aria-label='4 giờ']");
     By MINUTE = By.xpath("//li[@aria-label='10 phút']");
     By HOURTGKT = By.xpath("//li[@aria-label='10 giờ']");
@@ -43,7 +41,7 @@ public class QuanLySuKienPage {
     By SelectTinhThanhPho = By.xpath("//div/div/main/div/div[3]/div/div[2]/div/div[2]/div/div");
     By tinh = By.xpath("//li[normalize-space()='Khánh Hòa']");
     By diemdiem = By.xpath("//div[2]/div/div[3]/div/input");
-    By gioithieumotangan = By.xpath("//textarea[@id=':r23:']");
+    By gioithieumotangan = By.xpath("//div[3]/div/div[3]/div[1]/div/textarea[1]");
     By gioithieuchung = By.xpath("//div/div[3]/div[2]/div[2]/div/div[2]/div[1]");
     By btnLuuSKnew = By.xpath("//div/div/main/div/div[7]/button[2]");
     public void ThemMoiSuKien(String TenSuKien, String DiaDiem, String GioiThieuNgan, String GioiThieuChung  ) {
@@ -53,11 +51,7 @@ public class QuanLySuKienPage {
 
         //Logo
         WebUI.clickElement(avtSuKieb);
-<<<<<<< HEAD
         WebUI.uploadFileRobotClass("D:\\Code_Automation\\ProjectAutomation_DNSG-main\\src\\main\\resources\\datatest\\img7.png");
-=======
-        WebUI.uploadFileRobotClass("D:\\Code_Automation\\ProjectAutomation_DNSG\\src\\main\\resources\\datatest\\img7.png");
->>>>>>> develop
 
         //Tên sự kiện
         WebUI.setText(tensukien,TenSuKien);
@@ -113,7 +107,9 @@ public class QuanLySuKienPage {
     By editgioketthuc = By.xpath("//li[@aria-label='16 giờ']");
     By editphutketthuc = By.xpath("//li[@aria-label='10 phút']");
     By editTinh = By.xpath("li[normalize-space()='Bình Định']");
-    By MesageEditSKthanhcong = By.xpath("//div[contains(text(),'Thao tác thành công')]");
+    //By MesageEditSKthanhcong = By.xpath("//div[contains(text(),'Thao tác thành công')]");
+    By logout = By.xpath("//div/header/div/div/button");
+
     public void ChinhSuaSuKien(String tenskedit, String EditDiaDiem, String Editmotangan, String Editgioithieuchung) {
         WebUI.clickElement(pageQLSK);
         WebUI.clickElement(pageSuKienB2B);
@@ -160,20 +156,36 @@ public class QuanLySuKienPage {
         WebUI.clickElement(btnLuuSKnew);
         WebUI.sleep(2);
     }
-    public void verifyMessageEditSuKienThanhCong (String messageEditthanhcong){
-        boolean Editthanhcong = WebUI.getTextElement(MesageEditSKthanhcong).equals(messageEditthanhcong);
-        Assert.assertTrue(Editthanhcong,"Fail");
+
+
+    By page9thmonlyb2bUser = By.xpath("//main/header/div[2]/div/div/div[2]/a");
+    By CheckSK = By.xpath("//div[1]/div[3]/div[2]/div[2]/div[6]/div/a");
+
+    //Check sự kiện
+    public void CheckSuKien(){
+        WebUI.clickElement(page9thmonlyb2bUser);
+        WebUI.clickElement(CheckSK);
+        WebUI.sleep(2);
     }
+
+
+
+//    public void verifyMessageEditSuKienThanhCong (String messageEditthanhcong){
+//        boolean Editthanhcong = WebUI.getTextElement(MesageEditSKthanhcong).equals(messageEditthanhcong);
+//        Assert.assertTrue(Editthanhcong,"Fail");
+//    }
+
+
+
+
+
+
 
 
 
     //Xóa Sự Kiên B2B
     By doituongcanxoa = By.xpath("//div[2]/div/div/div[2]/div/div[2]/div/div[6]");
-<<<<<<< HEAD
     By btnXoaSK = By.xpath("//div/div[2]/div/div[2]/div/div[3]/div[8]/div/button[2]");
-=======
-    By btnXoaSK = By.xpath("//div/div[2]/div/div[2]/div/div[6]/div[8]/div/button[2]");
->>>>>>> develop
     By popupXoaSK = By.xpath("//div/div[2]/button[2]");
     public void XoaSuKien() {
         WebUI.clickElement(pageQLSK);
@@ -182,40 +194,7 @@ public class QuanLySuKienPage {
         WebUI.clickElement(btnXoaSK);
         WebUI.clickElement(popupXoaSK);
     }
-<<<<<<< HEAD
-    By tableListEvent = By.xpath("//div[@role='rowgroup']/div[@role='row']");
-    By eachColumnRow = By.xpath("//div[@role='rowgroup']/div[@role='row']/div");
-    By tabEventHappening = By.xpath("//button[contains(text(), 'Đang diễn ra')]");
-    public void verifyEvent(){
-        WebUI.clickElement(pageQLSK);
-        WebUI.clickElement(pageSuKienB2B);
-        WebUI.clickElement(tabEventHappening);
-        WebUI.waitForElementVisible(tableListEvent);
-        checkColumn("Viết máy");
-        WebUI.sleep(10);
-    }
-    public void checkColumn(String eventName){
-        WebUI.waitForElementVisible(tableListEvent);
-        List<WebElement> listB2B = WebUI.getWebElements(tableListEvent);
-        for(WebElement event : listB2B){
-            List<WebElement> list = event.findElements(By.xpath("./div"));
-            WebElement elementTarget;
-                int i;
-                for( i = 3; i < list.size(); i+=8){
 
-                    if(list.get(i).getText().equals(eventName)){
-
-                        System.out.println("Đã tìm thấy item cần tìm ở vị trí: " + list.get(i-2).getText());
-                    }else{
-
-                    }
-                }
-
-        }
-    }
-=======
-
->>>>>>> develop
 
     By MessageXoaSKthanhcong = By.xpath("//div[contains(text(),'Thao tác thành công')]");
 
