@@ -23,9 +23,6 @@ public class WebUI {
     public static WebElement getWebElement(By by) {
         return DriverManager.getDriver().findElement(by);
     }
-    public static List getWebElements(By by) {
-        return DriverManager.getDriver().findElements(by);
-    }
 
     public static void logConsole(String message) {
         System.out.println(message);
@@ -51,10 +48,6 @@ public class WebUI {
         JavascriptExecutor js = (JavascriptExecutor) DriverManager.getDriver();
         waitForPageLoaded();
         waitForElementVisible(by);
-        highLightElement(by);
-        js.executeScript("arguments[0].scrollIntoView(true);", getWebElement(by));
-        js.executeScript("arguments[0].click();", getWebElement(by));
-        logConsole("Click on element with Js: " + by);
         js.executeScript("arguments[0].scrollIntoView(true);", getWebElement(by));
         js.executeScript("arguments[0].click();", getWebElement(by));
     }

@@ -2,9 +2,6 @@ package DNSG.com.pages;
 
 import org.openqa.selenium.By;
 import org.testng.Assert;
-import org.openqa.selenium.WebElement;
-import org.testng.Assert;
-import quangtester.com.helpers.SystemsHelper;
 import quangtester.com.keywords.WebUI;
 
 public class DonViTaiTroPage {
@@ -30,7 +27,6 @@ public class DonViTaiTroPage {
         WebUI.clickElement(buttonAddDonViTaiTro);
         WebUI.clickElement(Logo);
         WebUI.uploadFileRobotClass("D:\\Code_Automation\\ProjectAutomation_DNSG-main\\src\\main\\resources\\datatest\\img6.jpg");
-        WebUI.uploadFileRobotClass("D:\\Code_Automation\\ProjectAutomation_DNSG\\src\\main\\resources\\datatest\\img6.jpg");
         WebUI.setText(Tendonvi,Ten_Don_Vi);
         WebUI.setText(Linkdonvi,Link_Don_Vi);
         WebUI.clickElement(buttonLuuDonvi);
@@ -79,7 +75,6 @@ public class DonViTaiTroPage {
 
         //Link
         WebUI.setText(Linkdonvi,EditLinkDonVi);
-
         WebUI.clickElement(buttonLuuDonvi);
         WebUI.sleep(1.5);
 

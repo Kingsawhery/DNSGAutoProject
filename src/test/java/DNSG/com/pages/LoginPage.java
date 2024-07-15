@@ -3,8 +3,6 @@ package DNSG.com.pages;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 import quangtester.com.keywords.WebUI;
-import static quangtester.com.keywords.WebUI.*;
-
 
 public class LoginPage {
     private String URl = "https://saigon-business.erp.meu-solutions.com/dang-nhap";
@@ -24,14 +22,22 @@ public class LoginPage {
 
 
     public void LoginThanhCong (String email,String password){
-       openURL(URl);
-       setText(inputEmail,email);
-       setText(inputPassword,password);
-       clickElement(buttonLogin);
-       sleep(2);
-
-
+       WebUI.openURL(URl);
+       WebUI.setText(inputEmail,email);
+       WebUI.setText(inputPassword,password);
+       WebUI.clickElement(buttonLogin);
+       WebUI.sleep(1.5);
    }
+
+   public void LoginUserCheckSuKien(String email_user, String password_user){
+       WebUI.openURL(URl);
+       WebUI.setText(inputEmail,email_user);
+       WebUI.setText(inputPassword,password_user);
+       WebUI.clickElement(buttonLogin);
+       WebUI.sleep(1.5);
+   }
+
+
 
    By messageSuccess = By.xpath("//div[contains(text(),'Đăng nhập thành công')]");
    public void  verifyLoginThanhCong(String messageloginthanhcong){
@@ -46,7 +52,6 @@ public class LoginPage {
         WebUI.clickElement(buttonLogin);
         WebUI.sleep(2);
     }
-
 
    By messageFailed = By.xpath("//div[contains(text(),'Email hoặc mật khẩu không đúng')]");
    public void verifyLoginThatBai(String messageloginthatbai){

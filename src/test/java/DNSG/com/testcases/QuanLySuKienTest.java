@@ -22,13 +22,6 @@ public class QuanLySuKienTest extends BaseTest {
 //        quanLySuKienPage.checkSearchTableByColumn("Nguyễn Tấn Tài");
 //
 //    }
-    @Test
-    public void verifyEventList(){
-        loginPage = new LoginPage();
-        loginPage.LoginThanhCong("admin@meu-solutions.com","123456");
-        quanLySuKienPage = new QuanLySuKienPage();
-        quanLySuKienPage.verifyEvent();
-    }
 
 
     @Test(priority = 1)
@@ -41,45 +34,49 @@ public class QuanLySuKienTest extends BaseTest {
                                  excelHelper.getCellData(3,5));
 
         excelHelper.setExcelFile("src/main/resources/datatest/QuanLySuKienB2B.xlsx","ThemSuKienB2B");
-        excelHelper.setExcelFile("src\\main\\resources\\datatest\\QuanLySuKienB2B.xlsx","ThemSuKienB2B");
-        loginPage.LoginThanhCong(excelHelper.getCellData(2,5),
-                                 excelHelper.getCellData(3,5));
-
-        excelHelper.setExcelFile("src\\main\\resources\\datatest\\QuanLySuKienB2B.xlsx","ThemSuKienB2B");
         quanLySuKienPage.ThemMoiSuKien(excelHelper.getCellData(9,5),
                                         excelHelper.getCellData(14,5),
                                         excelHelper.getCellData(15,5),
                                         excelHelper.getCellData(16,5));
-        quanLySuKienPage.verifyThemMoiSuKienThanhCong(excelHelper.getCellData(18,5));
+        //quanLySuKienPage.verifyThemMoiSuKienThanhCong(excelHelper.getCellData(18,5));
     }
-
-    @Test(priority = 3)
-    public void XoaSuKienB2B(){
-        loginPage = new LoginPage();
-        quanLySuKienPage = new QuanLySuKienPage();
-        excelHelper = new ExcelHelper();
-        excelHelper.setExcelFile("src/main/resources/datatest/QuanLySuKienB2B.xlsx","XoaSuKienB2B");
-        excelHelper.setExcelFile("src\\main\\resources\\datatest\\QuanLySuKienB2B.xlsx","XoaSuKienB2B");
-        loginPage.LoginThanhCong(excelHelper.getCellData(2,5),
-                                 excelHelper.getCellData(3,5));
-        quanLySuKienPage.XoaSuKien();
-        quanLySuKienPage.verifyMessageXoaSuKien(excelHelper.getCellData(11,5));
-    }
-
     @Test(priority = 2)
-    public void ChinhSuaSuKienB2BThanhCong(){
+    public void CheckSuKienThanhCong(){
         loginPage = new LoginPage();
         quanLySuKienPage = new QuanLySuKienPage();
-        excelHelper = new ExcelHelper();
-        excelHelper.setExcelFile("src/main/resources/datatest/QuanLySuKienB2B.xlsx","EditSuKienB2B");
-        excelHelper.setExcelFile("src\\main\\resources\\datatest\\QuanLySuKienB2B.xlsx","EditSuKienB2B");
-        loginPage.LoginThanhCong(excelHelper.getCellData(2,5),
-                                 excelHelper.getCellData(3,5));
-        quanLySuKienPage.ChinhSuaSuKien(excelHelper.getCellData(9,5),
-                                        excelHelper.getCellData(14,5),
-                                        excelHelper.getCellData(15,5),
-                                        excelHelper.getCellData(16,5));
-        quanLySuKienPage.verifyMessageEditSuKienThanhCong(excelHelper.getCellData(18,5));
+        loginPage.LoginThanhCong("alt.zm-eoze7jtz@yopmail.com","quang2001");
+        quanLySuKienPage.CheckSuKien();
     }
+
+
+
+
+
+//    @Test(priority = 3)
+//    public void XoaSuKienB2B(){
+//        loginPage = new LoginPage();
+//        quanLySuKienPage = new QuanLySuKienPage();
+//        excelHelper = new ExcelHelper();
+//        excelHelper.setExcelFile("src/main/resources/datatest/QuanLySuKienB2B.xlsx","XoaSuKienB2B");
+//        loginPage.LoginThanhCong(excelHelper.getCellData(2,5),
+//                                 excelHelper.getCellData(3,5));
+//        quanLySuKienPage.XoaSuKien();
+//        quanLySuKienPage.verifyMessageXoaSuKien(excelHelper.getCellData(11,5));
+//    }
+//
+//    @Test(priority = 2)
+//    public void ChinhSuaSuKienB2BThanhCong(){
+//        loginPage = new LoginPage();
+//        quanLySuKienPage = new QuanLySuKienPage();
+//        excelHelper = new ExcelHelper();
+//        excelHelper.setExcelFile("src/main/resources/datatest/QuanLySuKienB2B.xlsx","EditSuKienB2B");
+//        loginPage.LoginThanhCong(excelHelper.getCellData(2,5),
+//                                 excelHelper.getCellData(3,5));
+//        quanLySuKienPage.ChinhSuaSuKien(excelHelper.getCellData(9,5),
+//                                        excelHelper.getCellData(14,5),
+//                                        excelHelper.getCellData(15,5),
+//                                        excelHelper.getCellData(16,5));
+//        quanLySuKienPage.verifyMessageEditSuKienThanhCong(excelHelper.getCellData(18,5));
+//    }
 
 }

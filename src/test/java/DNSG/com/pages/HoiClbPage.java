@@ -29,7 +29,6 @@ public class HoiClbPage {
         WebUI.clickElement(buttonthemmoihoiclb);
         WebUI.clickElement(logohoiclb);
         WebUI.uploadFileRobotClass("D:\\Code_Automation\\ProjectAutomation_DNSG-main\\src\\main\\resources\\datatest\\img5.png");
-        WebUI.uploadFileRobotClass("D:\\Code_Automation\\ProjectAutomation_DNSG\\src\\main\\resources\\datatest\\img2.png");
         WebUI.setText(tenhoiclb ,TenHoiClb);
         WebUI.setText(emailhoiclb,EmailHoi);
         WebUI.setText(chieckhau,ChietKhau);
@@ -46,7 +45,6 @@ public class HoiClbPage {
 
     //Xóa Hội Clb
     By btnXoaHoiClb = By.xpath("//div[2]/div/div[2]/div/div[3]/div[10]/div/button[2]");
-
     By doituongHoi = By.xpath("//div/div[2]/div/div/div[2]/div/div[2]/div/div[1]");
     By popupXoaHoiClb = By.xpath("//div/div[2]/button[2]");
 
@@ -67,7 +65,6 @@ public class HoiClbPage {
 
     //Chỉnh Sửa Hội Clb
     By iconedithoi = By.xpath("//div[2]/div/div[2]/div/div[3]/div[10]/div/button[1]");
-
     By btnLuutrongEditHoi = By.xpath("//div/div[3]/button[2]");
 
     public void EditHoiClb(String EditTenHoi, String EditEmailHoi, String EditChietKhau){
