@@ -158,6 +158,9 @@ public class WebUI {
 
         wait.until(ExpectedConditions.visibilityOfElementLocated(by));
     }
+    public static List getWebElements(By by){
+        return DriverManager.getDriver().findElements(by);
+    }
 
     public static void waitForElementPresent(By by, int second) {
         WebDriverWait wait = new WebDriverWait(DriverManager.getDriver(), Duration.ofSeconds(second));
