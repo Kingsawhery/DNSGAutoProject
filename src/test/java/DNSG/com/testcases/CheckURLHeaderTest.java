@@ -16,21 +16,18 @@ public class CheckURLHeaderTest extends BaseTest {
         loginPage = new LoginPage();
         checkURLHeader = new CheckURLHeader();
         excelHelper = new ExcelHelper();
-<<<<<<< HEAD
         excelHelper.setExcelFile("src/main/resources/datatest/AccountCheckURL.xlsx","CheckURL");
         loginPage.LoginThanhCong(excelHelper.getCellData(2,5),
                                  excelHelper.getCellData(3,5));
 
         excelHelper.setExcelFile("src/main/resources/datatest/AccountCheckURL.xlsx","CheckURL");
         checkURLHeader.checkURLGioiThieu("https://saigon-business.erp.meu-solutions.com/gioi-thieu");
-=======
         excelHelper.setExcelFile("src\\main\\resources\\datatest\\AcconutCheckURL.xlsx","CheckURL");
         loginPage.LoginThanhCong(excelHelper.getCellData(2,5),
                                  excelHelper.getCellData(3,5));
 
         excelHelper.setExcelFile("src\\main\\resources\\datatest\\AcconutCheckURL.xlsx","CheckURL");
         checkURLHeader.checkURLGioiThieu(excelHelper.getCellData(7,5));
->>>>>>> develop
     }
 
     @Test(priority = 2)
@@ -38,15 +35,12 @@ public class CheckURLHeaderTest extends BaseTest {
         loginPage = new LoginPage();
         checkURLHeader = new CheckURLHeader();
         excelHelper = new ExcelHelper();
-<<<<<<< HEAD
         excelHelper.setExcelFile("src/main/resources/datatest/AccountCheckURL.xlsx","CheckURL");
         loginPage.LoginThanhCong(excelHelper.getCellData(10,5),
                                  excelHelper.getCellData(11,5));
-=======
         excelHelper.setExcelFile("src\\main\\resources\\datatest\\AcconutCheckURL.xlsx","AccountLoginCacPage");
         loginPage.LoginThanhCong(excelHelper.getCellData(1,1),
                                  excelHelper.getCellData(2,1));
->>>>>>> develop
         checkURLHeader.checkURL9thmonthlyb2b("https://saigon-business.erp.meu-solutions.com/9th-monthly-b2b");
     }
 
@@ -55,15 +49,12 @@ public class CheckURLHeaderTest extends BaseTest {
         loginPage = new LoginPage();
         checkURLHeader = new CheckURLHeader();
         excelHelper = new ExcelHelper();
-<<<<<<< HEAD
         excelHelper.setExcelFile("src/main/resources/datatest/AccountCheckURL.xlsx","CheckURL");
         loginPage.LoginThanhCong(excelHelper.getCellData(2,5),
                                  excelHelper.getCellData(3,5));
-=======
         excelHelper.setExcelFile("src\\main\\resources\\datatest\\AcconutCheckURL.xlsx","AccountLoginCacPage");
         loginPage.LoginThanhCong(excelHelper.getCellData(1,1),
                                  excelHelper.getCellData(2,1));
->>>>>>> develop
         checkURLHeader.checkURLGiaoThuongB2B("https://saigon-business.erp.meu-solutions.com/giao-thuong-b2b");
     }
 
@@ -72,15 +63,13 @@ public class CheckURLHeaderTest extends BaseTest {
         loginPage = new LoginPage();
         checkURLHeader = new CheckURLHeader();
         excelHelper = new ExcelHelper();
-<<<<<<< HEAD
         excelHelper.setExcelFile("src/main/resources/datatest/AccountCheckURL.xlsx","CheckURL");
         loginPage.LoginThanhCong(excelHelper.getCellData(2,5),
                                  excelHelper.getCellData(3,5));
-=======
         excelHelper.setExcelFile("src\\main\\resources\\datatest\\AcconutCheckURL.xlsx","AccountLoginCacPage");
         loginPage.LoginThanhCong(excelHelper.getCellData(1,1),
                                  excelHelper.getCellData(2,1));
->>>>>>> develop
+
         checkURLHeader.checkURLHiepHoiHoiClb("https://saigon-business.erp.meu-solutions.com/hiep-hoi-hoi-cau-lac-bo");
     }
 
@@ -89,15 +78,13 @@ public class CheckURLHeaderTest extends BaseTest {
         loginPage = new LoginPage();
         checkURLHeader = new CheckURLHeader();
         excelHelper = new ExcelHelper();
-<<<<<<< HEAD
         excelHelper.setExcelFile("src/main/resources/datatest/AccountCheckURL.xlsx","CheckURL");
         loginPage.LoginThanhCong(excelHelper.getCellData(2,5),
                                  excelHelper.getCellData(3,5));
-=======
         excelHelper.setExcelFile("src\\main\\resources\\datatest\\AcconutCheckURL.xlsx","AccountLoginCacPage");
         loginPage.LoginThanhCong(excelHelper.getCellData(1,1),
                                  excelHelper.getCellData(2,1));
->>>>>>> develop
+
         checkURLHeader.checkURLSuKienDoiTac("https://saigon-business.erp.meu-solutions.com/su-kien-doi-tac");
     }
 
@@ -106,15 +93,13 @@ public class CheckURLHeaderTest extends BaseTest {
         loginPage = new LoginPage();
         checkURLHeader = new CheckURLHeader();
         excelHelper = new ExcelHelper();
-<<<<<<< HEAD
         excelHelper.setExcelFile("src/main/resources/datatest/AccountCheckURL.xlsx","CheckURL");
         loginPage.LoginThanhCong(excelHelper.getCellData(2,5),
                                  excelHelper.getCellData(3,5));
-=======
         excelHelper.setExcelFile("src\\main\\resources\\datatest\\AcconutCheckURL.xlsx","AccountLoginCacPage");
         loginPage.LoginThanhCong(excelHelper.getCellData(1,1),
                                  excelHelper.getCellData(2,1));
->>>>>>> develop
+
         checkURLHeader.checkURLLienHe("https://saigon-business.erp.meu-solutions.com/lien-he");
     }
 

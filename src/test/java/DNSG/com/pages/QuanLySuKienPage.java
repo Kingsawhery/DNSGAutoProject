@@ -31,11 +31,7 @@ public class QuanLySuKienPage {
     By thoigianketthucSK = By.xpath("//div[1]/div/div[6]/div/input");
     By btnselectthoigianbatdau = By.xpath("//div[1]/div/div[5]/div/div/button");
     By btnselectthoigianketthuc = By.xpath("//div/div[1]/div/div[6]/div/div/button");
-<<<<<<< HEAD
     By popupChonNgayDienra = By.xpath("//div/div/div/div[2]/div/div/div[2]/div/div[5]/button[7]");
-=======
-    By popupChonNgayDienra = By.xpath("//div[2]/div/div/div[2]/div/div[5]/button[5]");
->>>>>>> develop
     By HOUR = By.xpath("//li[@aria-label='4 giờ']");
     By MINUTE = By.xpath("//li[@aria-label='10 phút']");
     By HOURTGKT = By.xpath("//li[@aria-label='10 giờ']");
@@ -53,11 +49,8 @@ public class QuanLySuKienPage {
 
         //Logo
         WebUI.clickElement(avtSuKieb);
-<<<<<<< HEAD
         WebUI.uploadFileRobotClass("D:\\Code_Automation\\ProjectAutomation_DNSG-main\\src\\main\\resources\\datatest\\img7.png");
-=======
         WebUI.uploadFileRobotClass("D:\\Code_Automation\\ProjectAutomation_DNSG\\src\\main\\resources\\datatest\\img7.png");
->>>>>>> develop
 
         //Tên sự kiện
         WebUI.setText(tensukien,TenSuKien);
@@ -169,11 +162,7 @@ public class QuanLySuKienPage {
 
     //Xóa Sự Kiên B2B
     By doituongcanxoa = By.xpath("//div[2]/div/div/div[2]/div/div[2]/div/div[6]");
-<<<<<<< HEAD
     By btnXoaSK = By.xpath("//div/div[2]/div/div[2]/div/div[3]/div[8]/div/button[2]");
-=======
-    By btnXoaSK = By.xpath("//div/div[2]/div/div[2]/div/div[6]/div[8]/div/button[2]");
->>>>>>> develop
     By popupXoaSK = By.xpath("//div/div[2]/button[2]");
     public void XoaSuKien() {
         WebUI.clickElement(pageQLSK);
@@ -182,7 +171,6 @@ public class QuanLySuKienPage {
         WebUI.clickElement(btnXoaSK);
         WebUI.clickElement(popupXoaSK);
     }
-<<<<<<< HEAD
     By tableListEvent = By.xpath("//div[@role='rowgroup']/div[@role='row']");
     By eachColumnRow = By.xpath("//div[@role='rowgroup']/div[@role='row']/div");
     By tabEventHappening = By.xpath("//button[contains(text(), 'Đang diễn ra')]");
@@ -213,9 +201,7 @@ public class QuanLySuKienPage {
 
         }
     }
-=======
 
->>>>>>> develop
 
     By MessageXoaSKthanhcong = By.xpath("//div[contains(text(),'Thao tác thành công')]");
 

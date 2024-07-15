@@ -38,8 +38,6 @@ public class AddNewEventPage {
         List<WebElement> listItemElements = WebUI.getWebElements(listItems);
         listItemElements.get(0).click();
     }
-
-
 By messageAddNewSuccess = By.xpath("//div[contains(text(),'Đăng ký thành công!')]");
     public  void verifyAddNewEventSuccess (){
         waitForPageLoaded();
