@@ -26,6 +26,25 @@ public class LoginPage {
        WebUI.setText(inputEmail,email);
        WebUI.setText(inputPassword,password);
        WebUI.clickElement(buttonLogin);
+<<<<<<< HEAD
+       WebUI.sleep(2);
+   }
+   public void LoginAdmin(String email, String password){
+       WebUI.openURL(URl);
+       WebUI.setText(inputEmail,email);
+       WebUI.setText(inputPassword,password);
+       WebUI.clickElement(buttonLogin);
+       WebUI.sleep(2);
+   }
+   public void LoginAccHoi (String email, String password){
+       WebUI.openURL(URl);
+       WebUI.setText(inputEmail,email);
+       WebUI.setText(inputPassword,password);
+       WebUI.clickElement(buttonLogin);
+       WebUI.sleep(2);
+   }
+
+=======
        WebUI.sleep(1.5);
    }
 
@@ -39,6 +58,7 @@ public class LoginPage {
 
 
 
+>>>>>>> developerII
    By messageSuccess = By.xpath("//div[contains(text(),'Đăng nhập thành công')]");
    public void  verifyLoginThanhCong(String messageloginthanhcong){
        boolean ketquamongmuon = WebUI.getTextElement(messageSuccess).trim().equals(messageloginthanhcong);

@@ -13,8 +13,74 @@ public class HoiClbPage {
     //page add HoiCLB
     private String PAGE_URL_HOICLBADMIN = "https://saigon-business.erp.meu-solutions.com/admin/club";
     private String PAGE_TEXT_THEMHOICLB = "Thông tin Hiệp hội/Hội/CLB";
+<<<<<<< HEAD
+    By clickXbutton =By.xpath("//*[name()='path' and contains(@d,'M19 6.41 1')]");
+    //Create event cho hoi
+    By clickOnAccText =By.xpath("//span[@class='text-base font-semibold text-app-blue leading-normal']");
+    By clickOnInForAcc =By.xpath("//li[contains(text(),'Thông tin tài khoản')]");
+    By clickOnInforEvent = By.xpath("//span[contains(text(),'Thông tin sự kiện')]");
+    By clickOnAddNewButton =By.xpath("//button[contains(text(),'Thêm mới')]");
+    By UploadPhoto=By.xpath("//label[@role='button']");
+    By inputNameEventTextbox =By.xpath("//div/div[2]/div/div[2]/div/input");
+    By inputAddressEventTextbox =By.xpath("//div[3]/div[3]/div/div[2]/div/div[3]/div/input");
+    By clickOnDateTextbox =By.xpath("//button[@aria-label='Chọn ngày']//*[name()='svg']");
+    By selectDateEvent=By.xpath("//button[normalize-space()='26']");
+    By scrolldownDesTextbox =By.xpath("//div[3]/div[3]/div/div[2]/div/div[3]/label");
+    By clickOnStartTimeTextbox=By.xpath("//div[3]/div[3]/div/div[2]/div/div[5]/div/div/button");
+    By clickOnStartTimeHourTextbox =By.xpath("//li[@aria-label='1 giờ']");
+    By clickOnStartTimeMinTextbox=By.xpath("//li[@aria-label='15 phút']");
+    By clickOnEndTimeTextbox =By.xpath("//div[3]/div[3]/div/div[2]/div/div[6]/div/div/button");
+    By clickOnEndTimeHour=By.xpath("//li[@aria-label='4 giờ']");
+    By clickOnEndTimeMin=By.xpath("//li[@aria-label='20 phút']");
+    By inputDescriptionTextbox=By.xpath("//div[3]/div[3]/div/div[2]/div/div[7]/div/textarea[1]");
+    By inputDecriptionEventTextbox=By.xpath("//div[@class='jodit-wysiwyg']");
+    By clickOnSaveButton =By.xpath("//div[3]/div[3]/div/div[3]/button[2]");
+    By clickOnEventTab= By.xpath("//main/header/div[2]/div/div/div[5]/a");
+   // By VerifyNameEvent=By.xpath("//a[normalize-space()='']");
+    By scrollDownSuKienCheck =By.xpath("//h1[contains(text(),'Sự kiện đã diễn ra')]");
+    By getTextNoty = By.xpath("//div[contains(text(),'Thao tác thành công')]");
+    //Hàm thêm mới sự kien
+    public void AddNewEventHoi(String NameEvent, String AddressEvent,String Description, String DescriptionEvent){
+        WebUI.clickElement(clickOnAccText);
+        WebUI.clickElement(clickOnInForAcc);
+        WebUI.clickElement(clickOnInforEvent);
+        WebUI.clickElement(clickOnAddNewButton);
+        WebUI.clickElement(UploadPhoto);
+        WebUI.uploadFileRobotClass("D:\\automation_selenium\\ProjectAutomation_DNSG-I-main\\src\\main\\resources\\datatest\\img5.png");
+        WebUI.setText(inputNameEventTextbox,NameEvent);
+        WebUI.scrollToElementWithJS(scrolldownDesTextbox);
+        WebUI.setText(inputAddressEventTextbox,AddressEvent);
+        WebUI.clickElement(clickOnDateTextbox);
+        WebUI.clickElement(selectDateEvent);
+        WebUI.clickElement(clickOnStartTimeTextbox);
+        WebUI.clickElement(clickOnStartTimeHourTextbox);
+        WebUI.clickElement(clickOnStartTimeMinTextbox);
+        WebUI.clickElement(clickOnEndTimeTextbox);
+        WebUI.clickElement(clickOnEndTimeHour);
+        WebUI.clickElement(clickOnEndTimeMin);
+        WebUI.setText(inputDescriptionTextbox,Description);
+        WebUI.setText(inputDecriptionEventTextbox,DescriptionEvent);
+        WebUI.clickElement(clickOnSaveButton);
+      //  WebUI.verifyElementText(getTextNoty,"Thao tác thành công", "sự kiện khong duoc tao");
+        WebUI.sleep(2);
+    }
+    By messageThemHoiThanhCong1 = By.xpath("//div[contains(text(),'Thao tác thành công')]");
+    public void veriifyThemHoiThanhCong1(String messageThemHoiClbthanhcong1){
+        boolean MessageThemHoiThanhCong = WebUI.getTextElement(messageThemHoiThanhCong1).equals(messageThemHoiClbthanhcong1);
+        Assert.assertTrue(MessageThemHoiThanhCong,"Fail");
+    }
+
+    public void verifyAddNewEventSucess(){
+        //WebUI.clickElement(clickOnEventTab);
+      //  WebUI.scrollToElementWithJS(scrollDownSuKienCheck);
+       // WebUI.verifyElementText(getVerifyNameEvent,AddressEvent,"Khong co su kien nao");
+        WebUI.verifyElementText(getTextNoty,"Thao tác thành công", "sự kiện khong duoc tac");
+
+    }
+=======
 
 
+>>>>>>> developerII
 
     //Thêm mới Hội Clb
     By clickpagehoiclbadmin = By.xpath("//div/div/div/ul/div[5]/div");
