@@ -13,7 +13,7 @@ public class HoiClbPage {
     //page add HoiCLB
     private String PAGE_URL_HOICLBADMIN = "https://saigon-business.erp.meu-solutions.com/admin/club";
     private String PAGE_TEXT_THEMHOICLB = "Thông tin Hiệp hội/Hội/CLB";
-<<<<<<< HEAD
+
     By clickXbutton =By.xpath("//*[name()='path' and contains(@d,'M19 6.41 1')]");
     //Create event cho hoi
     By clickOnAccText =By.xpath("//span[@class='text-base font-semibold text-app-blue leading-normal']");
@@ -77,10 +77,10 @@ public class HoiClbPage {
         WebUI.verifyElementText(getTextNoty,"Thao tác thành công", "sự kiện khong duoc tac");
 
     }
-=======
 
 
->>>>>>> developerII
+
+
 
     //Thêm mới Hội Clb
     By clickpagehoiclbadmin = By.xpath("//div/div/div/ul/div[5]/div");

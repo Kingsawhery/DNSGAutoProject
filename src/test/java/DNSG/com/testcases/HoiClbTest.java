@@ -25,7 +25,7 @@ public class HoiClbTest extends BaseTest {
                                 excelHelper.getCellData(10,5));
        hoiClbPage.veriifyThemHoiThanhCong(excelHelper.getCellData(13,5));
     }
-<<<<<<< HEAD
+
     @Test(priority = 4)
     public void AddnewEvent(){
         loginPage =new LoginPage();
