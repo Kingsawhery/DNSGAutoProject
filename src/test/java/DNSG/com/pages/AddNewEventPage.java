@@ -41,7 +41,7 @@ public class AddNewEventPage {
 
     }
 By messageAddNewSuccess = By.xpath("//div[contains(text(),'Đăng ký thành công!')]");
-    public  void verifyAddNewEventSuccess (){
+    public  void verifyAddNewEventSuccess(){
         waitForPageLoaded();
         waitForElementVisible(messageAddNewSuccess,20);
 
