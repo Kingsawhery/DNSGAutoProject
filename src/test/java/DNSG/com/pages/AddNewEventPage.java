@@ -37,6 +37,7 @@ public class AddNewEventPage {
     public void clickSelectItem(By listItems){
         List<WebElement> listItemElements = WebUI.getWebElements(listItems);
         listItemElements.get(0).click();
+        //Select items
 
     }
 By messageAddNewSuccess = By.xpath("//div[contains(text(),'Đăng ký thành công!')]");
