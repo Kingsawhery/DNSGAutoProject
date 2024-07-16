@@ -16,6 +16,7 @@ public class LoginTest extends BaseTest {
         excelHelper.setExcelFile("src/main/resources/datatest/LoginPage.xlsx","AccountUser");
         loginPage.LoginThanhCong(excelHelper.getCellData(2,5),
                                  excelHelper.getCellData(3,5));
+<<<<<<< HEAD
         loginPage.verifyLoginThanhCong(excelHelper.getCellData(5,5));
 
     }
@@ -35,6 +36,11 @@ public class LoginTest extends BaseTest {
         loginPage.LoginAccHoi(excelHelper.getCellData(14,5),
                 excelHelper.getCellData(15,5));
     }
+=======
+        //loginPage.verifyLoginThanhCong(excelHelper.getCellData(5,5));
+
+    }
+>>>>>>> developerII
 
     @Test (priority = 2)
     public void loginTestDNSGThatBai(){
@@ -43,6 +49,10 @@ public class LoginTest extends BaseTest {
         excelHelper.setExcelFile("src/main/resources/datatest/LoginPage.xlsx","AccountUser");
         loginPage.LoginThatBai(excelHelper.getCellData(7,5),
                                  excelHelper.getCellData(8,5));
+<<<<<<< HEAD
         loginPage.verifyLoginThatBai(excelHelper.getCellData(10,5));
+=======
+        //loginPage.verifyLoginThatBai(excelHelper.getCellData(10,5));
+>>>>>>> developerII
     }
 }
