@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Parallel Suite All" verbose="1">
+
+    <test name="est Parallel" parallel="methods" thread-count="6">
+        <classes>
+            <class name="DNSG.com.testcases.CheckURLHeaderTest"/>
+        </classes>
+    </test>
+
+</suite>
