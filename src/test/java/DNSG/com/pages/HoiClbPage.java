@@ -46,7 +46,7 @@ public class HoiClbPage {
         WebUI.clickElement(clickOnInforEvent);
         WebUI.clickElement(clickOnAddNewButton);
         WebUI.clickElement(UploadPhoto);
-        WebUI.uploadFileRobotClass("D:\\automation_selenium\\ProjectAutomation_DNSG-I-main\\src\\main\\resources\\datatest\\img5.png");
+        WebUI.uploadFileRobotClass("D:\\DNSGAuto\\9mb-autotest\\src\\main\\resources\\datatest\\img5.png");
         WebUI.setText(inputNameEventTextbox,NameEvent);
         WebUI.scrollToElementWithJS(scrolldownDesTextbox);
         WebUI.setText(inputAddressEventTextbox,AddressEvent);
@@ -70,13 +70,45 @@ public class HoiClbPage {
         Assert.assertTrue(MessageThemHoiThanhCong,"Fail");
     }
 
-    public void verifyAddNewEventSucess(){
-        //WebUI.clickElement(clickOnEventTab);
-      //  WebUI.scrollToElementWithJS(scrollDownSuKienCheck);
-       // WebUI.verifyElementText(getVerifyNameEvent,AddressEvent,"Khong co su kien nao");
-        WebUI.verifyElementText(getTextNoty,"Thao tác thành công", "sự kiện khong duoc tac");
+//    public void verifyAddNewEventSucess(){
+//        //WebUI.clickElement(clickOnEventTab);
+//      //  WebUI.scrollToElementWithJS(scrollDownSuKienCheck);
+//       // WebUI.verifyElementText(getVerifyNameEvent,AddressEvent,"Khong co su kien nao");
+//        WebUI.verifyElementText(getTextNoty,"Thao tác thành công", "sự kiện khong duoc tac");
+//
+//    }
 
-    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

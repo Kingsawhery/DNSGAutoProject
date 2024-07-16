@@ -1,9 +1,5 @@
 package quangtester.com.keywords;
-
-<<<<<<< HEAD
 import com.aventstack.extentreports.Status;
-=======
->>>>>>> developerII
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedCondition;
@@ -11,11 +7,9 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import quangtester.com.drivers.DriverManager;
-<<<<<<< HEAD
 import quangtester.com.reports.AllureReportManager;
 import quangtester.com.reports.ExtentReportTestManager;
-=======
->>>>>>> developerII
+
 
 import java.awt.*;
 import java.awt.datatransfer.StringSelection;
@@ -167,12 +161,9 @@ public class WebUI {
 
         wait.until(ExpectedConditions.visibilityOfElementLocated(by));
     }
-<<<<<<< HEAD
-=======
     public static List getWebElements(By by){
         return DriverManager.getDriver().findElements(by);
     }
->>>>>>> developerII
 
     public static void waitForElementPresent(By by, int second) {
         WebDriverWait wait = new WebDriverWait(DriverManager.getDriver(), Duration.ofSeconds(second));
@@ -191,7 +182,6 @@ public class WebUI {
 
         wait.until(ExpectedConditions.elementToBeClickable(by));
     }
-<<<<<<< HEAD
     public static void verifyElementText(By by, String textValue, String message){
         waitForPageLoaded();
         waitForElementVisible(by);
@@ -210,8 +200,7 @@ public class WebUI {
         }
         Assert.assertTrue(expected,message);
     }
-=======
->>>>>>> developerII
+
 
     public static boolean verifyElementVisible(By by, int second) {
         try {
@@ -235,10 +224,8 @@ public class WebUI {
             return false;
         }
     }
-<<<<<<< HEAD
   //  public static boolean verifyTextExist(By by){
-=======
->>>>>>> developerII
+
 
     public static boolean checkElementExist(By by) {
         List<WebElement> listElement = DriverManager.getDriver().findElements(by);

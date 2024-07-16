@@ -74,17 +74,6 @@ public class HoiClbTest extends BaseTest {
 
 
 
-
-
-
-
-
-
-
-=======
->>>>>>> developerII
-
-
     @Test(priority = 2)
     public void XoaHoiClb(){
         loginPage = new LoginPage();
