@@ -58,12 +58,12 @@ public class LoginPage {
        boolean ketquamongmuon = WebUI.getTextElement(messageFailed).trim().equals(messageloginthatbai);
        Assert.assertTrue(ketquamongmuon,"Fail");
    }
-   public void LoginAccHoi(String email,String password){
-       WebUI.openURL(URl);
-       WebUI.setText(inputEmail,email);
-       WebUI.setText(inputPassword,password);
-       WebUI.clickElement(buttonLogin);
-       WebUI.sleep(1.5);
-   }
+       public void LoginAccHoi(String email,String password){
+           WebUI.openURL(URl);
+           WebUI.setText(inputEmail,email);
+           WebUI.setText(inputPassword,password);
+           WebUI.clickElement(buttonLogin);
+           WebUI.sleep(1.5);
+       }
 
-}
+    }
